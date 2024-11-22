@@ -10,20 +10,18 @@ onUiLoaded(function () {
 
   const SBforFirefox = `
     :root, .dark {
-      scrollbar-color: ${SB} ${SBG};
-      scrollbar-width: thin;
+      scrollbar-color: ${SB} transparent;
     }
   `;
 
   const SBwebkit = `
     ::-webkit-scrollbar {
-      width: 10px;
+      width: .4rem
     }
 
     ::-webkit-scrollbar-thumb {
       background: ${SB};
       border-radius: 30px;
-      border: 1px solid ${SBG};
     }
 
     ::-webkit-scrollbar-thumb:hover {
