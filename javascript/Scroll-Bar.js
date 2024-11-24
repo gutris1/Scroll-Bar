@@ -4,9 +4,9 @@ onUiLoaded(function () {
   const ScrollBAR = document.createElement('style');
   document.head.appendChild(ScrollBAR);
 
-  var SB = 'var(--button-secondary-text-color)';
+  var SB = 'var(--primary-400)';
+  var SBH = 'var(--primary-600)';
   var SBG = 'var(--input-background-fill)';
-  var SBH = 'var(--button-secondary-text-color-hover)';
 
   const SBforFirefox = `
     :root, .dark {
@@ -16,18 +16,15 @@ onUiLoaded(function () {
 
   const SBwebkit = `
     ::-webkit-scrollbar {
-      width: .4rem
+      width: .5rem;
     }
-
     ::-webkit-scrollbar-thumb {
-      background: ${SB};
+      background: ${SB} !important;
       border-radius: 30px;
     }
-
     ::-webkit-scrollbar-thumb:hover {
-      background: ${SBH};
+      background: ${SBH} !important;
     }
-
     ::-webkit-scrollbar-track {
       background: ${SBG};
       border-radius: 0px;
