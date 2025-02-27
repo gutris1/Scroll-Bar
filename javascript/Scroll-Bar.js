@@ -1,4 +1,4 @@
-onUiLoaded(function () {
+document.addEventListener('DOMContentLoaded', () => {
   const isFirefox = /firefox/i.test(navigator.userAgent);
 
   const ScrollBAR = document.createElement('style');
